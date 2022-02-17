@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		32ACA22627BEA59F00CAD982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACA22527BEA59F00CAD982 /* AppDelegate.swift */; };
 		32ACA22827BEA59F00CAD982 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACA22727BEA59F00CAD982 /* SceneDelegate.swift */; };
-		32ACA22A27BEA59F00CAD982 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACA22927BEA59F00CAD982 /* ViewController.swift */; };
 		32ACA22D27BEA59F00CAD982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32ACA22B27BEA59F00CAD982 /* Main.storyboard */; };
 		32ACA23027BEA59F00CAD982 /* EventManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32ACA22E27BEA59F00CAD982 /* EventManager.xcdatamodeld */; };
 		32ACA23227BEA5A100CAD982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32ACA23127BEA5A100CAD982 /* Assets.xcassets */; };
 		32ACA23527BEA5A100CAD982 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32ACA23327BEA5A100CAD982 /* LaunchScreen.storyboard */; };
+		32ACA24027BEA83B00CAD982 /* EventListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACA23F27BEA83B00CAD982 /* EventListTableViewController.swift */; };
+		32ACA24527BEABAD00CAD982 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACA24427BEABAD00CAD982 /* EventDetailViewController.swift */; };
+		32ACA24727BEAC6400CAD982 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACA24627BEAC6400CAD982 /* EventTableViewCell.swift */; };
+		32ACA24927BEAEA700CAD982 /* Event+convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACA24827BEAEA700CAD982 /* Event+convenience.swift */; };
+		32ACA24B27BEB68700CAD982 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACA24A27BEB68700CAD982 /* EventController.swift */; };
+		32ACA24E27BEB93C00CAD982 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32ACA24D27BEB93C00CAD982 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		32ACA22227BEA59F00CAD982 /* EventManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32ACA22527BEA59F00CAD982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32ACA22727BEA59F00CAD982 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		32ACA22927BEA59F00CAD982 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32ACA22C27BEA59F00CAD982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32ACA22F27BEA59F00CAD982 /* EventManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EventManager.xcdatamodel; sourceTree = "<group>"; };
 		32ACA23127BEA5A100CAD982 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32ACA23427BEA5A100CAD982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32ACA23627BEA5A100CAD982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32ACA23F27BEA83B00CAD982 /* EventListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListTableViewController.swift; sourceTree = "<group>"; };
+		32ACA24427BEABAD00CAD982 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		32ACA24627BEAC6400CAD982 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		32ACA24827BEAEA700CAD982 /* Event+convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Event+convenience.swift"; sourceTree = "<group>"; };
+		32ACA24A27BEB68700CAD982 /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		32ACA24D27BEB93C00CAD982 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 		32ACA21927BEA59F00CAD982 = {
 			isa = PBXGroup;
 			children = (
+				32ACA24C27BEB68C00CAD982 /* Models */,
 				32ACA22427BEA59F00CAD982 /* EventManager */,
 				32ACA22327BEA59F00CAD982 /* Products */,
 			);
@@ -58,16 +69,60 @@
 		32ACA22427BEA59F00CAD982 /* EventManager */ = {
 			isa = PBXGroup;
 			children = (
-				32ACA22527BEA59F00CAD982 /* AppDelegate.swift */,
-				32ACA22727BEA59F00CAD982 /* SceneDelegate.swift */,
-				32ACA22927BEA59F00CAD982 /* ViewController.swift */,
-				32ACA22B27BEA59F00CAD982 /* Main.storyboard */,
-				32ACA23127BEA5A100CAD982 /* Assets.xcassets */,
-				32ACA23327BEA5A100CAD982 /* LaunchScreen.storyboard */,
-				32ACA23627BEA5A100CAD982 /* Info.plist */,
-				32ACA22E27BEA59F00CAD982 /* EventManager.xcdatamodeld */,
+				32ACA23C27BEA5B500CAD982 /* Resources */,
+				32ACA23D27BEA5C400CAD982 /* Storyboard */,
+				32ACA23E27BEA5CD00CAD982 /* Core Data */,
+				32ACA24327BEA85900CAD982 /* Controllers */,
 			);
 			path = EventManager;
+			sourceTree = "<group>";
+		};
+		32ACA23C27BEA5B500CAD982 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32ACA22527BEA59F00CAD982 /* AppDelegate.swift */,
+				32ACA22727BEA59F00CAD982 /* SceneDelegate.swift */,
+				32ACA23127BEA5A100CAD982 /* Assets.xcassets */,
+				32ACA23627BEA5A100CAD982 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		32ACA23D27BEA5C400CAD982 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				32ACA22B27BEA59F00CAD982 /* Main.storyboard */,
+				32ACA23327BEA5A100CAD982 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		32ACA23E27BEA5CD00CAD982 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				32ACA22E27BEA59F00CAD982 /* EventManager.xcdatamodeld */,
+				32ACA24827BEAEA700CAD982 /* Event+convenience.swift */,
+				32ACA24D27BEB93C00CAD982 /* CoreDataStack.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		32ACA24327BEA85900CAD982 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				32ACA23F27BEA83B00CAD982 /* EventListTableViewController.swift */,
+				32ACA24427BEABAD00CAD982 /* EventDetailViewController.swift */,
+				32ACA24627BEAC6400CAD982 /* EventTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		32ACA24C27BEB68C00CAD982 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32ACA24A27BEB68700CAD982 /* EventController.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32ACA22A27BEA59F00CAD982 /* ViewController.swift in Sources */,
+				32ACA24727BEAC6400CAD982 /* EventTableViewCell.swift in Sources */,
 				32ACA22627BEA59F00CAD982 /* AppDelegate.swift in Sources */,
+				32ACA24527BEABAD00CAD982 /* EventDetailViewController.swift in Sources */,
+				32ACA24E27BEB93C00CAD982 /* CoreDataStack.swift in Sources */,
+				32ACA24927BEAEA700CAD982 /* Event+convenience.swift in Sources */,
 				32ACA23027BEA59F00CAD982 /* EventManager.xcdatamodeld in Sources */,
+				32ACA24027BEA83B00CAD982 /* EventListTableViewController.swift in Sources */,
+				32ACA24B27BEB68700CAD982 /* EventController.swift in Sources */,
 				32ACA22827BEA59F00CAD982 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EventManager/Info.plist;
+				INFOPLIST_FILE = EventManager/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +381,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EventManager/Info.plist;
+				INFOPLIST_FILE = EventManager/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
