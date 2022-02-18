@@ -42,6 +42,7 @@ class EventTableViewCell: UITableViewCell {
     func configure(with event: Event){
         self.event = event
         EventTitleLabel.text = event.title
+        updateViews()
     }
     
 }
