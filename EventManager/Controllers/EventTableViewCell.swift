@@ -17,14 +17,13 @@ class EventTableViewCell: UITableViewCell {
     @IBOutlet weak var isAttendingButton: UIButton!
     
     var event: Event?
-    var isAttendingEvent: Bool = false
     weak var delegate: EventTableViewCellDelegate?
     
     func updateViews(){
-       print("event tableview cell update views function")
+       print("🤟event tableview cell update views function")
         guard let event = event else{return}
         
-        if event.isAttending == true{
+        if event.attendingToggle == true{
             isAttendingButton.setImage(UIImage(systemName: "person.fill.checkmark"), for: .normal)
            
         }else{
@@ -35,7 +34,7 @@ class EventTableViewCell: UITableViewCell {
     
    
     @IBAction func isAtttendingButtonTapped(_ sender: Any) {
-        print("is attending tapped")
+        print("😈is attending tapped")
         delegate?.isAttendingButtonTapped(for: self)
       
     }

@@ -24,7 +24,7 @@ class EventController{
     //MARK: CRUD
     
     func create(title: String, date: Date, time: Date){
-        print("inside create title \(title) date\(date) time\(time)")
+      //  print("inside create title \(title) date\(date) time\(time)")
         //under the hood the event is going into the context
          let newEvent = Event(title: title, date: date, time: date)
         events.append(newEvent)
@@ -33,7 +33,7 @@ class EventController{
     
     func fetchEvents(){
         let events = (try? CoreDataStack.context.fetch(self.fetchRequest)) ?? []
-        print("how many events? \(events.count)")
+     //   print("how many events? \(events.count)")
         self.events = events
     }
   
@@ -46,7 +46,9 @@ class EventController{
     
     //MARK: NOT SAVING
     func isAttendingEvent(event: Event){
-        event.isAttending = !event.isAttending
+        //print("👽inside isAttending what is event? \(event)")
+         event.attendingToggle = !event.attendingToggle
+        print("👀is attending toggle? \(event.attendingToggle)")
         CoreDataStack.saveContext()
     }
     

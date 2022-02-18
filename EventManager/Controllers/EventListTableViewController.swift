@@ -60,10 +60,10 @@ class EventListTableViewController: UITableViewController {
            let indexPath = tableView.indexPathForSelectedRow,
            let destination = segue.destination as? EventDetailViewController{
             //indexpath//destination
-            print("what is index path? \(indexPath)")
+         //   print("what is index path? \(indexPath)")
             //object to send
             let eventToSend = EventController.shared.events[indexPath.row]
-            print("event to send is? \(eventToSend)")
+           // print("event to send is? \(eventToSend)")
             //object to receive
             destination.event = eventToSend
         }
@@ -74,10 +74,10 @@ class EventListTableViewController: UITableViewController {
 
 extension EventListTableViewController: EventTableViewCellDelegate{
     func isAttendingButtonTapped(for cell: EventTableViewCell) {
-        print("we are going to event self delegate to self")
+     //   print("we are going to event self delegate to self")
         guard let indexPath = tableView.indexPath(for: cell) else {return}
         let event = EventController.shared.events[indexPath.row]
-        
+       // print("event in delegate extension \(event)🤡")
         EventController.shared.isAttendingEvent(event: event)
         cell.updateViews()
     }
